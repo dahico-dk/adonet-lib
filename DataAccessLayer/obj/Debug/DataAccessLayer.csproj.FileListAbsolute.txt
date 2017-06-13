@@ -1,0 +1,16 @@
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\bin\Debug\Core.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\bin\Debug\Helper.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\bin\Debug\Core.pdb
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\bin\Debug\Helper.pdb
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\DataAccessLayer\bin\Debug\Core.dll
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\DataAccessLayer\bin\Debug\Core.pdb

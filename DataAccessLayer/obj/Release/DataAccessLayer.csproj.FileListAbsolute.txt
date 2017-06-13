@@ -1,0 +1,9 @@
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\bin\Release\DataAccessLayer.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\bin\Release\DataAccessLayer.pdb
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\bin\Release\Core.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\bin\Release\Helper.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\bin\Release\Core.pdb
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\bin\Release\Helper.pdb
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\obj\Release\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\obj\Release\DataAccessLayer.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\DataAccessLayer\obj\Release\DataAccessLayer.pdb

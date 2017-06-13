@@ -1,0 +1,7 @@
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Core\bin\Release\Core.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Core\bin\Release\Core.pdb
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Core\bin\Release\Helper.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Core\bin\Release\Helper.pdb
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Core\obj\Release\Core.csprojResolveAssemblyReference.cache
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Core\obj\Release\Core.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Core\obj\Release\Core.pdb

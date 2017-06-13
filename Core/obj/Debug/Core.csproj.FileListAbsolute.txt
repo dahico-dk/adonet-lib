@@ -1,0 +1,12 @@
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Core\bin\Debug\Core.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Core\bin\Debug\Core.pdb
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Core\bin\Debug\Helper.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Core\bin\Debug\Helper.pdb
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Core\obj\Debug\Core.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Core\obj\Debug\Core.pdb
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\Core\bin\Debug\Core.dll
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\Core\bin\Debug\Core.pdb
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\Core\obj\Debug\Core.dll
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\Core\obj\Debug\Core.pdb

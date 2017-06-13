@@ -1,0 +1,20 @@
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Facade\bin\Debug\Facade.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Facade\bin\Debug\Facade.pdb
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Facade\bin\Debug\Core.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Facade\bin\Debug\DataAccessLayer.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Facade\bin\Debug\Helper.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Facade\bin\Debug\Core.pdb
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Facade\bin\Debug\DataAccessLayer.pdb
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Facade\bin\Debug\Helper.pdb
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Facade\obj\Debug\Facade.csprojResolveAssemblyReference.cache
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Facade\obj\Debug\Facade.dll
+C:\Users\daghankaban\Source\Workspaces\AFK_B2B\AfkB2B\Facade\obj\Debug\Facade.pdb
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\Facade\obj\Debug\Facade.csprojResolveAssemblyReference.cache
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\Facade\obj\Debug\Facade.dll
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\Facade\obj\Debug\Facade.pdb
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\Facade\bin\Debug\Facade.dll
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\Facade\bin\Debug\Facade.pdb
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\Facade\bin\Debug\Core.dll
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\Facade\bin\Debug\DataAccessLayer.dll
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\Facade\bin\Debug\Core.pdb
+C:\Users\dkaba\documents\visual studio 2017\Projects\ADONET-LIB\Facade\bin\Debug\DataAccessLayer.pdb
