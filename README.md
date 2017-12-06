@@ -2,6 +2,10 @@
 
 ADO.NET-LIB farklı sınıf kütüphanelerine bölünmüş bir ADO.NET projesidir. Projesinde ADO.NET kullanmak isteyenler bu projenin mantığını referans alarak kendi projelerine entegre edebilirler.
 
+Ana klasör olan ADONET-LIB'de mevcut bağlantı tipini uygulayan bir MVC projesi vardır.
+
+ADO.NET bağlantı kaynak kodları DataAccessLayer klasöründedir.
+
 
 ### Veritabanı bağlantısı:
 
