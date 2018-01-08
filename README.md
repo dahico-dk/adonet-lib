@@ -108,7 +108,7 @@ ADO.NET ile ilişkili dosyalar DataAccessLayer,Facade ve Core sınıf kütüphan
   Update delete gibi geriye bir değer dönmeyen işlemler için TekIslemSP() ve TekIslemManuel() metodları kullanılır. Bu metodlar geriye int tipinden veri dönerler. Negatif dönüş işlemin hata verdiğini belirtir. Pozitif değer ise başarılı olduğunu. Metod geriye true false dönerek bir üst katmana işlemin başarılı mı başarısız mı olduğunu belirtir.
   
   ```
-   public static bool TekIslemSP()
+        public static bool TekIslemSP()
         {           
             DbCommand command = new DbCommand(stored_proc_adi);      
             SqlDataReader read = null; bool sonuc = false;
@@ -134,7 +134,7 @@ ADO.NET ile ilişkili dosyalar DataAccessLayer,Facade ve Core sınıf kütüphan
  Bu katman proje ile direk temas eden katmandır. Bu metodda birden fazla DataAccessLayer metodunun kullanılışı gösterilmiştir.
  
  ``` 
- public List<dynamic> TestPull()
+        public List<dynamic> TestPull()
         {
             List<dynamic> duylist = new List<dynamic>();
             List<Core.TP_KULLANICI.User> OSList = new List<Core.TP_KULLANICI.User>();
@@ -165,7 +165,7 @@ ADO.NET ile ilişkili dosyalar DataAccessLayer,Facade ve Core sınıf kütüphan
 Projede sadece Facade sınıfı kullanılır. using içinde kullanılarak hafıza yönetimi  sağlanır.
 
 ```
-        List<dynamic> test = null;
+            List<dynamic> test = null;
             using (Facade.TestFacade tf=new Facade.TestFacade()) //Kullan at
             {
                test= tf.TestPull();
