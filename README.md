@@ -1,6 +1,6 @@
 # adonet-lib
 
-ADO.NET-LIB farklı sınıf kütüphanelerine bölünmüş bir ADO.NET projesidir. Projesinde ADO.NET kullanmak isteyenler bu projenin mantığını referans alarak kendi projelerine entegre edebilirler.
+ADO.NET-LIB farklı sınıf kütüphanelerine bölünmüş bir ADO.NET uygulama projesidir. Projesinde ADO.NET kullanmak isteyenler bu projenin mantığını referans alarak kendi projelerine entegre edebilirler.
 
 SAMPLE projesi bu bağlantı tipini uygulayan bir MVC projesidir.
 
