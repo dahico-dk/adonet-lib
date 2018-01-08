@@ -2,30 +2,28 @@
 
 ADO.NET-LIB farklı sınıf kütüphanelerine bölünmüş bir ADO.NET projesidir. Projesinde ADO.NET kullanmak isteyenler bu projenin mantığını referans alarak kendi projelerine entegre edebilirler.
 
-Ana klasör olan ADONET-LIB'de mevcut bağlantı tipini uygulayan bir MVC projesi vardır.
+SAMPLE projesi bu bağlantı tipini uygulayan bir MVC projesidir.
 
-ADO.NET bağlantı kaynak kodları DataAccessLayer klasöründedir.
-
+ADO.NET ile ilişkili dosyalar DataAccessLayer,Facade ve Core sınıf kütüphanelerinde yer alır.Kullanıcı talep doğrultusunda bu sınıf kütüphanelerini tek bir sınıf kütüphanesi altında birleştirerek klasörlerle birbirinden ayırma yoluna gidebilir.
 
 ### Veritabanı bağlantısı:
 
-*Proje veritabanı bağlantılarını entegre edildiği Projenin config dosyasından çeker. 
+  *Proje veritabanı bağlantılarını entegre edildiği .NET Projesinin config dosyasından çeker. Kullanıcı config dosyasını kullanmak istemez ise bağlantı cümleciği ayarları DataAccessLayer/DB/DbConnection sınıfındadır. 
 
-*DataAccessLayer'daki Helper sınıfı bu connection string olusturma işlemini yapar.
+  *DataAccessLayer sınıf kütüphanesindeki Helper sınıfı config dosyasından bağlantı cümleciği olusturma işlemini yapar.
 
-*DBConnection sınıfı veritabanı bağlantısını açar.
+  *DBConnection sınıfı veritabanı bağlantısını açar.
 
-```
+  ```
   public static readonly string connectionString = DB.Helper.connectionstring();
   ```
-  
-  
-  
+  ---
+
   Proje genel olarak 3 sınıf kütüphanesinden meydana gelmektedir.
   
   #Core
   
-  Core kütüphanesi DB nesneleri ile eşlenecek sınıfları barındırır. DB'den dönen veriler bu sınıflara yüklenir. Nested sınıf ya da constructorlar yardımı ile farklı şekillerde'de bu nesneler tek dosyada yaratılabilir. Ben ayrı sınıflarda tutmayı tercih ediyorum.
+  Core kütüphanesi veritabanı nesneleri ile eşlenecek sınıfları barındırır. Veritabanından dönen veriler bu sınıflara yüklenir. ç içe sınıflar ya da yapıcı metodlar yardımı ile farklı şekillerde bu nesneler tek dosyada yaratılabilir. Ben ayrı sınıflarda tutmayı tercih ediyorum.
   ```
    public class User
     {       
@@ -37,9 +35,9 @@ ADO.NET bağlantı kaynak kodları DataAccessLayer klasöründedir.
   ```
   #DataAccessLayer
   
-  Bütün database işlemlerinin yapıldığı katman bu katmandır. 
+  Bütün veritabanı işlemlerinin yapıldığı katman bu katmandır. 
   
-  KullaniciListele.cs class'ı örnek olarak yaratılmış bir classtır. Bu kütüphane DBConnection ve DBCommand sınıflarını kullanarak veritabanı ile bütün etkileşimi sağlayan sınıftır.
+  KullaniciListele.cs sınıfı örnek olarak yaratılmış bir classtır. Bu kütüphane DBConnection ve DBCommand sınıflarını kullanarak veritabanı ile bütün etkileşimi sağlayan sınıftır.
   
   ```
   private static Core.TP_KULLANICI.User UserLoad(SqlDataReader read)
@@ -59,7 +57,7 @@ ADO.NET bağlantı kaynak kodları DataAccessLayer klasöründedir.
             return user;
         }  
   ```
-  UserLoad nesnesi örnek bir load nesnesidir. Bütün temel sorgu işlemlerinde geriye dönen değerler while döngüsü içinde UserLoad (-ya da tekrar yazılacak başka nesneler için başka load metodları ile) ile çekilir. Buradaki stored_proc_adi class'a gömülü olan property'dir. Elle girmek için StoreProcedureSorguManuel("SP_ADI") metodu kullanilir.
+  UserLoad nesnesi örnek bir load nesnesidir. Bütün temel sorgu işlemlerinde geriye dönen değerler while döngüsü içinde UserLoad (-ya da tekrar yazılacak başka nesneler için başka load metodları veya global bir load metodu) ile çekilir. Buradaki stored_proc_adi class'a gömülü olan property'dir. Elle girmek için StoreProcedureSorguManuel("SP_ADI") metodu kullanılır.
     
   ```
   
@@ -97,17 +95,17 @@ ADO.NET bağlantı kaynak kodları DataAccessLayer klasöründedir.
   
   ```
   
-  Burada UserLoad ile birlikte örnek olarak StoreProcedureSorgu metodu kullanılmıştır. Önce yükleme yapılacak olan liste yaratılıp ardından yeni bir DBCommand nesnesi yaratılmıştır. DbCommand nesnesi yaratılış esnasında bir stored procedure ismi ile ya da boş olarak yaratılabilir. AddParameter ve AddParameterOut komutları ile var ise sp için gerekli parametreler yaratılır. Ardından DBCommandın IsletDataReader() metodu ile SQLDataReader nesnesine yükleme yapılır. 
+  Burada UserLoad ile birlikte örnek olarak StoreProcedureSorgu metodu kullanılmıştır. Önce yükleme yapılacak olan liste yaratılıp ardından yeni bir DBCommand nesnesi yaratılmıştır. DbCommand nesnesi yaratılış esnasında bir stored procedure ismi ile ya da boş olarak yaratılabilir. AddParameter ve AddParameterOut komutları kullanılarak sp için gerekli parametreler(eğer var ise) yaratılır. Ardından DBCommandın IsletDataReader() metodu ile SQLDataReader nesnesine yükleme yapılır. 
   
-  While içinde  userliste.Add(UserLoad(read)); ile her okuma esnasında elde edilen Db'den dönen veriler User nesnesinin gerekli propertylerine eşlendikten sonra listeye eklenir.
+  While içinde  userliste.Add(UserLoad(read)); komutu ile her okuma esnasında elde edilen Db'den dönen veriler User nesnesinin gerekli özelliklerine eşlendikten sonra listeye eklenir.
   
-  finally kısmında ise read ve command nesneleri kapatılarak hafıza kaplamalarının önüne geçilir.
+  finally kısmında ise read ve command nesneleri kapatılarak gereksiz hafıza kaplamalarının önüne geçilir.
   
   Output parametreleri kullanılıyor ise bunların değerleri read nesnesi kapatıldıktan sonra alınmalıdır. Aksi takdirde boş gelecektir.
   
   ### Geriye değer dönmeyen işlemler
   
-  Update delete gibi geriye bir değer dönmeyen işlemler için TekIslemSP() ve TekIslemManuel() metodları kullanılır. Bu metodlar geriye int tipinden veri dönerler. Negatif dönüş işlemin hata verdiğini gösterir. Pozitif değer ise başarılı olduğunu. Metod geriye true false dönerek bir üst katmana işlemin başarılı mı başarısız mı olduğunu belirtir.
+  Update delete gibi geriye bir değer dönmeyen işlemler için TekIslemSP() ve TekIslemManuel() metodları kullanılır. Bu metodlar geriye int tipinden veri dönerler. Negatif dönüş işlemin hata verdiğini belirtir. Pozitif değer ise başarılı olduğunu. Metod geriye true false dönerek bir üst katmana işlemin başarılı mı başarısız mı olduğunu belirtir.
   
   ```
    public static bool TekIslemSP()
@@ -164,7 +162,7 @@ ADO.NET bağlantı kaynak kodları DataAccessLayer klasöründedir.
 
 # Proje
 
-Projede sadece Facade sınıfı kullanılır. using içinde kullanılarak temizlik sağlanır.
+Projede sadece Facade sınıfı kullanılır. using içinde kullanılarak hafıza yönetimi  sağlanır.
 
 ```
         List<dynamic> test = null;
